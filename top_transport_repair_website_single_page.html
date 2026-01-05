@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TOP Transport Truck & Car Hauler Repair | Shop + Mobile Service</title>
+  <meta name="description" content="TOP Transport Truck & Car Hauler Repair provides shop and mobile service for heavy-duty trucks and auto transport equipment. Hydraulics, racks/decks, air systems, brakes, axles, DOT repairs, and preventative maintenance." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TOP Transport Truck & Car Hauler Repair" />
+  <meta property="og:description" content="Shop + mobile repair for trucks and car haulers. Fast turnaround. Honest diagnostics." />
+  <meta property="og:type" content="website" />
+  <!-- Replace with your hosted image URL (hero) -->
+  <meta property="og:image" content="assets/hero.jpg" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#101a2e;
+      --muted:#a7b3cc;
+      --text:#eef2ff;
+      --brand:#ffd54a;
+      --brand2:#4dd0ff;
+      --border:rgba(255,255,255,.12);
+      --shadow: 0 18px 50px rgba(0,0,0,.35);
+      --radius:20px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 10% 10%, rgba(77,208,255,.16), transparent 60%),
+        radial-gradient(900px 500px at 90% 0%, rgba(255,213,74,.14), transparent 60%),
+        linear-gradient(180deg, #070b14, var(--bg));
+    }
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1120px, 92%); margin:0 auto;}
+
+    /* Header */
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background:rgba(7,11,20,.65);
+      border-bottom:1px solid var(--border);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      font-weight:800; letter-spacing:.2px;
+    }
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      border:1px solid rgba(255,255,255,.18);
+      display:grid; place-items:center;
+      color:#0b1220;
+      font-weight:900;
+    }
+    .brand small{display:block; font-weight:600; color:var(--muted); letter-spacing:0}
+    .navlinks{display:flex; gap:18px; align-items:center;}
+    .navlinks a{color:var(--muted); font-weight:650; font-size:14px}
+    .navlinks a:hover{color:var(--text)}
+    .ctaRow{display:flex; gap:10px; align-items:center;}
+    .btn{
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      padding:10px 14px;
+      border-radius:999px;
+      font-weight:750;
+      font-size:14px;
+      display:inline-flex; align-items:center; gap:10px;
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+      box-shadow: 0 12px 26px rgba(0,0,0,.22);
+    }
+    .btn:hover{transform: translateY(-1px); background:rgba(255,255,255,.10); border-color:rgba(255,255,255,.22)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(255,213,74,.92), rgba(77,208,255,.92));
+      color:#06101f;
+      border-color: rgba(255,255,255,.30);
+    }
+    .btn.primary:hover{background: linear-gradient(135deg, rgba(255,213,74,1), rgba(77,208,255,1));}
+
+    .mobileMenuBtn{display:none}
+
+    /* Hero */
+    .hero{
+      padding:44px 0 26px;
+    }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    .heroCard{
+      border:1px solid var(--border);
+      background: rgba(16,26,46,.72);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:26px;
+      overflow:hidden;
+      position:relative;
+    }
+    .pill{
+      display:inline-flex; gap:10px; align-items:center;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      padding:8px 12px;
+      border-radius:999px;
+      color:var(--muted);
+      font-weight:700;
+      font-size:13px;
+      width:fit-content;
+    }
+    .pill b{color:var(--text)}
+    h1{
+      margin:14px 0 10px;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height:1.05;
+      letter-spacing:-.5px;
+    }
+    .lead{color:var(--muted); font-size:16px; line-height:1.6; margin:0 0 18px;}
+    .heroActions{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px;}
+    .kv{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:12px;
+      margin-top:18px;
+    }
+    .kv .item{
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      border-radius:16px;
+      padding:12px;
+    }
+    .kv .item .k{font-weight:900; font-size:16px}
+    .kv .item .v{color:var(--muted); font-weight:700; font-size:13px; margin-top:4px}
+
+    .heroImage{
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      background: rgba(255,255,255,.04);
+      position:relative;
+    }
+    .heroImage::before{
+      content:"";
+      position:absolute; inset:0;
+      background: linear-gradient(180deg, rgba(11,18,32,.15), rgba(11,18,32,.82));
+      pointer-events:none;
+      z-index:2;
+    }
+    .heroImage img{
+      width:100%; height:100%; object-fit:cover; display:block;
+      filter: saturate(1.05) contrast(1.02);
+      transform: scale(1.02);
+    }
+    .heroImage .overlay{
+      position:absolute; left:16px; right:16px; bottom:16px;
+      z-index:3;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(7,11,20,.55);
+      border-radius:16px;
+      padding:14px;
+      display:flex; align-items:flex-start; justify-content:space-between;
+      gap:12px;
+      backdrop-filter: blur(10px);
+    }
+    .overlay .title{font-weight:900}
+    .overlay .sub{color:var(--muted); font-weight:700; font-size:13px; margin-top:6px}
+    .overlay .badge{
+      flex:0 0 auto;
+      padding:8px 10px;
+      border-radius:999px;
+      background: linear-gradient(135deg, rgba(255,213,74,.9), rgba(77,208,255,.9));
+      color:#06101f;
+      font-weight:900;
+      font-size:13px;
+      white-space:nowrap;
+    }
+
+    /* Sections */
+    section{padding:24px 0}
+    .sectionTitle{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:14px;
+      margin-bottom:12px;
+    }
+    .sectionTitle h2{margin:0; font-size:22px; letter-spacing:-.2px}
+    .sectionTitle p{margin:0; color:var(--muted); font-weight:650}
+
+    .grid3{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px;}
+    .grid2{display:grid; grid-template-columns:repeat(2, 1fr); gap:14px;}
+    .card{
+      border:1px solid var(--border);
+      background: rgba(16,26,46,.56);
+      border-radius: var(--radius);
+      padding:16px;
+      box-shadow: 0 16px 40px rgba(0,0,0,.25);
+    }
+    .card h3{margin:0 0 6px; font-size:16px}
+    .card p{margin:0; color:var(--muted); line-height:1.55; font-weight:650}
+    .list{margin:10px 0 0; padding:0; list-style:none; display:grid; gap:8px}
+    .list li{display:flex; gap:10px; color:var(--muted); font-weight:700}
+    .dot{width:10px; height:10px; border-radius:99px; background:linear-gradient(135deg, var(--brand), var(--brand2)); margin-top:5px; flex:0 0 auto}
+
+    /* Gallery */
+    .gallery{display:grid; grid-template-columns:repeat(3, 1fr); gap:10px;}
+    .gallery .ph{
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:18px;
+      overflow:hidden;
+      aspect-ratio: 4 / 3;
+      background: rgba(255,255,255,.04);
+      display:grid; place-items:center;
+      color:var(--muted);
+      font-weight:800;
+    }
+    .gallery img{width:100%; height:100%; object-fit:cover; display:block}
+
+    /* Contact */
+    .contactWrap{display:grid; grid-template-columns: 1.1fr .9fr; gap:14px;}
+    label{display:block; font-size:13px; color:var(--muted); font-weight:800; margin:12px 0 6px}
+    input, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      outline:none;
+      font-weight:650;
+    }
+    textarea{min-height:120px; resize:vertical}
+    .help{font-size:12px; color:var(--muted); font-weight:650; margin-top:8px}
+
+    footer{padding:26px 0 44px; color:var(--muted)}
+    .footGrid{display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+    .tiny{font-size:12px; color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width: 920px){
+      .heroGrid{grid-template-columns: 1fr;}
+      .kv{grid-template-columns: repeat(3, 1fr);}
+      .grid3{grid-template-columns: 1fr;}
+      .grid2{grid-template-columns: 1fr;}
+      .contactWrap{grid-template-columns: 1fr;}
+      .gallery{grid-template-columns: 1fr;}
+      .navlinks{display:none}
+      .mobileMenuBtn{display:inline-flex}
+    }
+    @media (max-width: 520px){
+      .kv{grid-template-columns: 1fr;}
+    }
+  </style>
+
+  <!-- LocalBusiness schema (fill in address/phone once you have it) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "TOP Transport Truck & Car Hauler Repair",
+    "url": "https://toptransport-inc.com/repair",
+    "telephone": "+1-859-421-3985",
+    "description": "Shop and mobile repair for trucks and car haulers. Hydraulics, racks/decks, air systems, brakes, axles, DOT repairs, and preventative maintenance.",
+    "areaServed": "Within 250 miles",
+    "sameAs": [],
+    "openingHours": ["Mo-Sa 08:00-18:00"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "111 Olympic Dr. Suite 230",
+      "addressLocality": "Nicholasville",
+      "addressRegion": "KY",
+      "postalCode": "40356",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="Home">
+          <div class="logo">TOP</div>
+          <div>
+            TOP Transport Repair
+            <small>Truck & Car Hauler • Shop + Mobile</small>
+          </div>
+        </a>
+
+        <nav class="navlinks" aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#why">Why Us</a>
+          <a href="#gallery">Shop</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="ctaRow">
+          <a class="btn" href="#contact">Get a Quote</a>
+          <a class="btn primary" href="tel:+18594213985" aria-label="Call now">
+            Call Now
+          </a>
+          <a class="btn mobileMenuBtn" href="#menu" onclick="toggleMenu(event)">Menu</a>
+        </div>
+      </div>
+
+      <div id="mobileMenu" style="display:none; padding: 0 0 14px;">
+        <div class="card" style="padding:12px; border-radius:16px;">
+          <div style="display:flex; gap:14px; flex-wrap:wrap;">
+            <a class="btn" href="#services" onclick="toggleMenu(event,true)">Services</a>
+            <a class="btn" href="#why" onclick="toggleMenu(event,true)">Why Us</a>
+            <a class="btn" href="#gallery" onclick="toggleMenu(event,true)">Shop</a>
+            <a class="btn" href="#contact" onclick="toggleMenu(event,true)">Contact</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="container">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="heroGrid">
+          <div class="heroCard">
+            <div class="pill">Built by <b>TOP Transport INC</b> • Fleet experience</div>
+            <h1>Truck & Car Hauler Repair<br/>that gets you back on the road.</h1>
+            <p class="lead">
+              Full-service shop + mobile service for heavy-duty trucks and auto transport equipment.
+              Hydraulics, racks/decks, air systems, brakes, axles, DOT repairs, and preventative maintenance.
+            </p>
+
+            <div class="heroActions">
+              <a class="btn primary" href="tel:+18594213985">📞 Call for Service</a>
+              <a class="btn" href="#contact">Request a Quote</a>
+              <a class="btn" href="#services">See Services</a>
+            </div>
+
+            <div class="kv" aria-label="Key highlights">
+              <div class="item">
+                <div class="k">Shop + Mobile</div>
+                <div class="v">Fast response & turnaround</div>
+              </div>
+              <div class="item">
+                <div class="k">Car Hauler Specialists</div>
+                <div class="v">Racks, decks, hydraulics</div>
+              </div>
+              <div class="item">
+                <div class="k">DOT Ready</div>
+                <div class="v">Safety-first repairs</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="heroImage" aria-label="Shop photo">
+            <!-- Replace src with your real image. Put your photo in /assets/hero.jpg -->
+            <img src="assets/hero.jpg" alt="Car hauler on lifts in repair shop" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback').style.display='grid';" />
+            <div class="fallback" style="display:none; position:absolute; inset:0; place-items:center; color:var(--muted); font-weight:850;">
+              Add your hero image: <span style="color:var(--text); margin-left:8px;">assets/hero.jpg</span>
+            </div>
+            <div class="overlay">
+              <div>
+                <div class="title">We repair car haulers — not just trucks</div>
+                <div class="sub">Owner-operators & fleets • Honest diagnostics • Clear communication</div>
+              </div>
+              <div class="badge">Shop • Mobile</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services">
+        <div class="sectionTitle">
+          <h2>Services</h2>
+          <p>Trucks + auto transport equipment</p>
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <h3>Car Hauler Hydraulics</h3>
+            <p>Leaks, cylinders, hoses, valves, pumps, and troubleshooting for rack/deck systems.</p>
+            <ul class="list">
+              <li><span class="dot"></span>Hose & fitting replacement</li>
+              <li><span class="dot"></span>Hydraulic leaks & pressure issues</li>
+              <li><span class="dot"></span>Rack/deck function diagnostics</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Racks, Decks & Securement</h3>
+            <p>Repairs for stingers, high mounts, ramps, pins, locks, and hardware.</p>
+            <ul class="list">
+              <li><span class="dot"></span>Rack alignment & binding</li>
+              <li><span class="dot"></span>Chains, hooks, anchors</li>
+              <li><span class="dot"></span>Structural & hardware fixes</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Truck Systems</h3>
+            <p>Air, brakes, suspension, axles, lighting, and common road failures.</p>
+            <ul class="list">
+              <li><span class="dot"></span>Air leaks & compressor lines</li>
+              <li><span class="dot"></span>Brakes, chambers, slack adjusters</li>
+              <li><span class="dot"></span>Suspension/axle components</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid2" style="margin-top:14px;">
+          <div class="card">
+            <h3>DOT Repairs & Preventative Maintenance</h3>
+            <p>Keep your equipment compliant and ready for inspections.</p>
+            <ul class="list">
+              <li><span class="dot"></span>Lights, reflectors, ABS issues</li>
+              <li><span class="dot"></span>Tires, wheels, hub leaks</li>
+              <li><span class="dot"></span>PM service for trucks & haulers</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Mobile Service</h3>
+            <p>Roadside support when you can’t make it to the shop.</p>
+            <ul class="list">
+              <li><span class="dot"></span>On-site diagnostics</li>
+              <li><span class="dot"></span>Minor repairs to get rolling</li>
+              <li><span class="dot"></span>Clear ETA & updates</li>
+            </ul>
+            <div class="help">* Availability may vary based on distance and job type.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY US -->
+      <section id="why">
+        <div class="sectionTitle">
+          <h2>Why TOP Transport Repair</h2>
+          <p>We run trucks — we get it</p>
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <h3>Car Hauler Experience</h3>
+            <p>Built from real fleet operations. We know what breaks, what matters, and what gets you moving.</p>
+          </div>
+          <div class="card">
+            <h3>Honest Diagnostics</h3>
+            <p>Clear explanation, photos if needed, and straight answers—no guessing games.</p>
+          </div>
+          <div class="card">
+            <h3>Fast Turnaround</h3>
+            <p>Downtime kills revenue. We prioritize fixes that get you back on the road safely.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery">
+        <div class="sectionTitle">
+          <h2>Shop Photos</h2>
+          <p>Add 6–9 real photos for trust</p>
+        </div>
+
+        <div class="gallery">
+          <!-- Replace these placeholders with real images in /assets -->
+          <div class="ph">assets/photo1.jpg</div>
+          <div class="ph">assets/photo2.jpg</div>
+          <div class="ph">assets/photo3.jpg</div>
+        </div>
+        <div class="help">Tip: Use photos of car haulers on lifts, close-ups of hydraulics, and before/after repairs.</div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="sectionTitle">
+          <h2>Contact</h2>
+          <p>Call or request a quote</p>
+        </div>
+
+        <div class="contactWrap">
+          <div class="card">
+            <h3 style="margin-bottom:0;">Request a Quote</h3>
+            <p style="margin-top:8px;">Tell us what you’re hauling, what’s wrong, and your location. We’ll respond ASAP.</p>
+
+            <form id="quoteForm" onsubmit="sendQuote(event)">
+              <label for="name">Name</label>
+              <input id="name" name="name" placeholder="Your name" required />
+
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" placeholder="(xxx) xxx-xxxx" required />
+
+              <label for="unit">Truck / Unit (optional)</label>
+              <input id="unit" name="unit" placeholder="Truck #, trailer #, VIN (optional)" />
+
+              <label for="message">What do you need fixed?</label>
+              <textarea id="message" name="message" placeholder="Example: hydraulic leak on rack, air leak, brake chamber, lights, axle issue…" required></textarea>
+
+              <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
+                <button class="btn primary" type="submit">Send Request</button>
+                <a class="btn" href="tel:+18594213985">📞 Call: (859) 421-3985</a>
+              </div>
+              <div class="help">This form opens your email app (no website backend needed). For a full online form, we can connect it to a simple backend later.</div>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>Shop Info</h3>
+            <ul class="list" style="margin-top:12px;">
+              <li><span class="dot"></span><div><b>Phone:</b> <a href="tel:+18594213985">(859) 421-3985</a></div></li>
+              <li><span class="dot"></span><div><b>Service:</b> Shop + Mobile</div></li>
+              <li><span class="dot"></span><div><b>Hours:</b> Mon–Sat 8:00 AM – 6:00 PM</div></li>
+              <li><span class="dot"></span><div><b>Location:</b> 111 Olympic Dr. Suite 230, Nicholasville, KY 40356</div></li>
+              <li><span class="dot"></span><div><b>Service Area:</b> Within ~250 miles</div></li>
+            </ul>
+
+            <div class="card" style="margin-top:14px; background: rgba(255,255,255,.04);">
+              <h3 style="margin:0 0 8px;">Google Maps</h3>
+              <p style="margin:0;">Once you have an address, paste your Google Maps embed here.</p>
+              <div class="help">Replace the box below with an <code>&lt;iframe&gt;</code> from Google Maps.</div>
+              <iframe title="Google Maps" width="100%" height="320" style="border:0; border-radius:16px" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=111%20Olympic%20Dr%20Suite%20230%20Nicholasville%20KY%2040356&output=embed"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footGrid">
+        <div>
+          <div style="font-weight:900; color:var(--text)">TOP Transport Truck & Car Hauler Repair</div>
+          <div class="tiny">A division of TOP Transport INC</div>
+        </div>
+        <div class="tiny">© <span id="yr"></span> TOP Transport INC • All rights reserved</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    function toggleMenu(e, close=false){
+      if(e) e.preventDefault();
+      const el = document.getElementById('mobileMenu');
+      const isOpen = el.style.display !== 'none';
+      el.style.display = (close || isOpen) ? 'none' : 'block';
+    }
+
+    function sendQuote(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const unit = document.getElementById('unit').value.trim();
+      const msg = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent('Repair Quote Request - TOP Transport Repair');
+      const body = encodeURIComponent(
+        `Name: ${name}\n`+
+        `Phone: ${phone}\n`+
+        (unit ? `Unit/VIN: ${unit}\n` : '')+
+        `\nIssue/Request:\n${msg}\n\n`+
+        `Sent from website.`
+      );
+
+      // Change the email below to your shop email
+      const to = 'nick@toptransport-inc.com';
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
